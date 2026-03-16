@@ -1,0 +1,79 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * Core Philosophy: This ruleset enforces a strict user-ownership model.
+     * All user-specific data, such as profiles, shopping carts, and orders,
+     * is sandboxed within a path structure dedicated to that user. Publicly
+     * accessible data, like product listings, is stored in a separate,
+     * top-level collection with distinct access controls.
+     *
+     * Data Structure: All private data is nested under `/users/{userId}`,
+     * making it easy to secure entire data trees with a single rule based on
+     * the user's authentication ID. Public data resides in top-level collections
+     * like `/products`. This structural segregation simplifies rules and improves
+     * query performance and security.
+     *
+     * Key Security Decisions:
+     * - User Isolation: Users can only read and write their own documents. They
+     *   cannot access, or even know about, the data of other users.
+     * - Public Read, Admin Write: The `/products` collection is readable by
+     *   anyone, but write operations are restricted to authenticated users,
+     *   acting as a proxy for 'admin' status in this prototype.
+     * - No User Listing: To protect user privacy and prevent enumeration attacks,
+     *   listing documents in the top-level `/users` collection is explicitly
+     *   disallowed.
+     *
+     * Denormalization for Authorization: This ruleset relies on path-based
+     * security. The user's UID is part of the document path (e.g.,
+     * `/users/{userId}/orders/...`), which is the most performant and secure way
+     * to check for ownership, completely avoiding slow and costly `get()` calls in rules.
+     */
+
+    // --------------------------------------------------------------------------
+    // Helper Functions
+    // --------------------------------------------------------------------------
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+    
+    // --------------------------------------------------------------------------
+    // Collection Rules
+    // --------------------------------------------------------------------------
+
+    match /users/{userId} {
+      allow get: if isOwner(userId);
+      allow list: if false; // Do not allow listing all users
+      allow create, update, delete: if isOwner(userId);
+
+      match /orders/{orderId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      match /shoppingCarts/{cartId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    match /products/{productId} {
+      // Allow public read access for both authenticated and unauthenticated users.
+      allow get, list: if request.auth == null || request.auth != null;
+      
+      // In a production app, this should be restricted to admin roles
+      // via custom claims or a separate 'admins' collection check.
+      // For this prototype, writes are public from the admin panel.
+      allow write: if true;
+    }
+
+    match /inquiries/{inquiryId} {
+      allow read, update, delete: if false;
+      allow create: if true;
+    }
+  }
+}

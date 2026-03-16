@@ -1,0 +1,196 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Elegant fashion background with clothing rack",
+      "imageUrl": "https://mireillefv.wordpress.com/wp-content/uploads/2022/09/9748ca48a8162ad52f53030c57049b05.jpg",
+      "imageHint": "fashion background"
+    },
+    {
+      "id": "cat-women",
+      "description": "Category image for women's fashion",
+      "imageUrl": "https://images.unsplash.com/photo-1509319117193-57bab727e09d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21lbiUyMGZhc2hpb258ZW58MHx8fHwxNzY4NzI4MzQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman fashion"
+    },
+    {
+      "id": "cat-men",
+      "description": "Category image for men's fashion",
+      "imageUrl": "https://static1.squarespace.com/static/661d29f8ede0342d740900f6/661d399eddd51e635e4b41d6/674dbab9b6305e04d2164268/1733148332587/Wardrobe_Cph_Amanda.png?format=1500w",
+      "imageHint": "men fashion"
+    },
+    {
+      "id": "cat-kids",
+      "description": "Category image for kids' fashion",
+      "imageUrl": "https://product-images-cdn.liketoknow.it/HHo5XHxJi2DINaFdCu2KaIQg035GCt8pLpaQh7pHUwOkj5oir0tV5K9G1swDTVgneX7cJ9DdOC8L7Af9lmRFKOSxX3cr2tUH5y7uPw9R5zyKhHzXVxQ7FAbM0C_E4Huu.7g6FacV4e7k0blbMOV6CBw2cCUXaqRTmvqeQvGl5DE5BR3JqqsVOOxrPWM-?v=0&auto=format&fm=webp&w=450&q=80&dpr=2.625",
+      "imageHint": "kids fashion"
+    },
+    {
+      "id": "prod-1-1",
+      "description": "Flowy Maxi Dress front",
+      "imageUrl": "https://images.unsplash.com/photo-1511130558090-00af810c21b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMGRyZXNzfGVufDB8fHx8fDE3Njg1MjcyNjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman dress"
+    },
+    {
+      "id": "prod-1-2",
+      "description": "Flowy Maxi Dress back",
+      "imageUrl": "https://images.unsplash.com/photo-1635073878554-1d35fa316c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkcmVzcyUyMGRldGFpbHxlbnwwfHx8fDE3Njg1MzUyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dress detail"
+    },
+    {
+      "id": "prod-2-1",
+      "description": "Classic Denim Jacket front",
+      "imageUrl": "https://images.unsplash.com/photo-1614693348454-1e0710d21c60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkZW5pbSUyMGphY2tldHxlbnwwfHx8fDE3Njg1MDQxMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "denim jacket"
+    },
+    {
+      "id": "prod-3-1",
+      "description": "Chic Trench Coat",
+      "imageUrl": "https://images.unsplash.com/photo-1591484784918-4333b2a2b975?w=500&h=667&fit=crop",
+      "imageHint": "woman trenchcoat"
+    },
+    {
+      "id": "prod-3-2",
+      "description": "Chic Trench Coat, side view",
+      "imageUrl": "https://images.unsplash.com/photo-1617053325655-23f2f0b7e284?w=500&h=667&fit=crop",
+      "imageHint": "trenchcoat side"
+    },
+    {
+      "id": "prod-4-1",
+      "description": "High-Waist Skinny Jeans",
+      "imageUrl": "https://images.unsplash.com/photo-1475178626620-a4d074967452?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxza2lubnklMjBqZWFuc3xlbnwwfHx8fDE3Njg1NzU0MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skinny jeans"
+    },
+    {
+      "id": "prod-5-1",
+      "description": "Linen A-Line Skirt",
+      "imageUrl": "https://images.unsplash.com/photo-1678300410347-fc1accb1b19b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsaW5lbiUyMHNraXJ0fGVufDB8fHx8fDE3Njg1NzU0MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "linen skirt"
+    },
+    {
+      "id": "prod-6-1",
+      "description": "Cashmere V-Neck Sweater",
+      "imageUrl": "https://images.unsplash.com/photo-1631541909061-71e35b1f203?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY4NTM5NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cashmere sweater"
+    },
+    {
+      "id": "prod-7-1",
+      "description": "Tailored Wool Blazer",
+      "imageUrl": "https://images.unsplash.com/photo-1594897973908-bc1544a0469d?w=500&h=667&fit=crop",
+      "imageHint": "man blazer"
+    },
+    {
+      "id": "prod-8-1",
+      "description": "Pleated Midi Dress",
+      "imageUrl": "https://images.unsplash.com/photo-1762154057377-cc9d3dd6900c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaWRpJTIwZHJlc3N8ZW58MHx8fHwxNzY4NTc1NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "midi dress"
+    },
+    {
+      "id": "avatar-1",
+      "description": "User avatar 1",
+      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8fDE3Njg1NTQ3MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "avatar-2",
+      "description": "User avatar 2",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njg1NzI1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "login-bg",
+      "description": "Background for login page",
+      "imageUrl": "https://images.unsplash.com/photo-1695131023163-1e04e1345a91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYWJyaWMlMjB0ZXh0dXJlfGVufDB8fHx8fDE3Njg1NTY2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fabric texture"
+    },
+    {
+      "id": "checkout-success",
+      "description": "Image for checkout success page",
+      "imageUrl": "https://images.unsplash.com/photo-1604118464816-5e2bd7b863c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaG9wcGluZyUyMGJhZ3N8ZW58MHx8fHwxNzY4NDk0MjM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shopping bags"
+    },
+    {
+      "id": "prod-9-1",
+      "description": "Men's Shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1603252109303-2751441dd157?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBzaGlydHxlbnwwfHx8fDE3Njg4MTI0NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man shirt"
+    },
+    {
+      "id": "prod-10-1",
+      "description": "Men's T-Shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjB0LXNoaXJ0fGVufDB8fHx8fDE3Njg4MTI0NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man t-shirt"
+    },
+    {
+      "id": "prod-11-1",
+      "description": "Men's Jeans",
+      "imageUrl": "https://images.unsplash.com/photo-1604176354204-9268737828e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZW4lMjBqZWFuc3xlbnwwfHx8fDE3Njg4MTI1MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "men jeans"
+    },
+    {
+      "id": "prod-12-1",
+      "description": "Men's Formal Pant",
+      "imageUrl": "https://images.unsplash.com/photo-1541089421-5a3f3d3c88e8?w=500&h=667&fit=crop",
+      "imageHint": "men trousers"
+    },
+    {
+      "id": "prod-13-1",
+      "description": "Men's Formal Shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1596755716259-73a7c648f244?w=500&h=667&fit=crop",
+      "imageHint": "men formal-shirt"
+    },
+    {
+      "id": "prod-14-1",
+      "description": "Men's Embroidered Korta",
+      "imageUrl": "https://images.unsplash.com/photo-1622045493339-b47c01476b05?w=500&h=667&fit=crop",
+      "imageHint": "men kurta"
+    },
+    {
+      "id": "prod-15-1",
+      "description": "Women's Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1610170013009-66870a25694c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNhcmVlfGVufDB8fHx8fDE3Njg4MTI2MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman saree"
+    },
+    {
+      "id": "prod-16-1",
+      "description": "Women's Three Piece",
+      "imageUrl": "https://images.unsplash.com/photo-1695753060248-c89b2a64c4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHRyYWRpdGlvbmFsJTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY4ODEyNjMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman traditional"
+    },
+    {
+      "id": "prod-17-1",
+      "description": "Women's Korta",
+      "imageUrl": "https://images.unsplash.com/photo-1624606992854-4c48316c05d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGt1cnRpfGVufDB8fHx8fDE3Njg4MTI2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman kurti"
+    },
+    {
+      "id": "prod-18-1",
+      "description": "Boys' Dino Graphic Tee",
+      "imageUrl": "https://images.unsplash.com/photo-1521638216-398390325409?w=500&h=667&fit=crop",
+      "imageHint": "boy dinosaur"
+    },
+    {
+      "id": "prod-19-1",
+      "description": "Girls' Sparkle Tutu Skirt",
+      "imageUrl": "https://images.unsplash.com/photo-1509373954249-13aa19a2e308?w=500&h=667&fit=crop",
+      "imageHint": "girl tutu"
+    },
+    {
+      "id": "prod-20-1",
+      "description": "Unisex Kids Hoodie",
+      "imageUrl": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&h=667&fit=crop",
+      "imageHint": "kids hoodie"
+    },
+    {
+      "id": "prod-21-1",
+      "description": "Leather Biker Jacket",
+      "imageUrl": "https://images.unsplash.com/photo-1549929832-72c0c53f3455?w=500&h=667&fit=crop",
+      "imageHint": "leather jacket"
+    },
+    {
+      "id": "prod-21-2",
+      "description": "Leather Biker Jacket, back view",
+      "imageUrl": "https://images.unsplash.com/photo-1521105342412-5e439534571d?w=500&h=667&fit=crop",
+      "imageHint": "jacket back"
+    }
+  ]
+}
