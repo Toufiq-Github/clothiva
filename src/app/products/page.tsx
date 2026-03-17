@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useFirebase, useCollection, useMemoFirebase } from '@/firebase';
 import { collection, query, where, orderBy } from 'firebase/firestore';
@@ -21,7 +21,7 @@ import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import { Skeleton } from '@/components/ui/skeleton';
 
-export default function ProductsPage() {
+function ProductsContent() {
   const searchParams = useSearchParams();
   const { firestore } = useFirebase();
 
@@ -57,9 +57,6 @@ export default function ProductsPage() {
     if (selectedSizes.length > 0) {
         q = query(q, where('sizes', 'array-contains-any', selectedSizes));
     }
-    
-    // Firestore doesn't support inequality filters on multiple fields, or complex array queries.
-    // Client-side filtering is needed for some criteria.
     
     if (sortBy === 'price-asc') {
         q = query(q, orderBy('price', 'asc'));
@@ -238,4 +235,16 @@ export default function ProductsPage() {
       </div>
     </div>
   );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    }>
+      <ProductsContent />
+    </Suspense>
+  )
 }
