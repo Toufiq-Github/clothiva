@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useRouter, useSearchParams } from "next/navigation"
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, Suspense } from "react"
 import { useAuth } from "@/hooks/use-auth"
 
 import { Button } from "@/components/ui/button"
@@ -19,7 +19,7 @@ import { Label } from "@/components/ui/label"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { useToast } from "@/hooks/use-toast";
 
-export default function LoginPage() {
+function LoginContent() {
   const bgImage = PlaceHolderImages.find(p => p.id === 'login-bg');
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -115,5 +115,17 @@ export default function LoginPage() {
         )}
       </div>
     </div>
+  )
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    }>
+      <LoginContent />
+    </Suspense>
   )
 }
